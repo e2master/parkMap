@@ -1,0 +1,34 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0px;
+	padding: 0px
+}
+#wrapper {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+#mapHolder {
+	float: left;
+	background-color: #ccc;
+	height: 100%;
+	margin-top: 2px;
+	width: calc(100% - 280px);
+}
+#mapInfo {
+	float: left;
+	color: #333;
+	width: 265px;
+	height: 100%;
+	background: #fff;
+	padding: 10px 7px 10px 8px;
+}
+#container {
+	height: 100%;
+}
