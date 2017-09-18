@@ -13,16 +13,32 @@
 		<div id="wrapper">
 			<div id="mapInfo">
 				<div>
-					<input type="text" name="" id="" value="" placeholder="输入查询条件"/>
+					<input type="text" data-bind="value: searchStr, valueUpdate: 'afterkeydown'" placeholder="输入查询条件" />
 					<button>查询</button>
 				</div>
-				<div id="">
-					<ul>sdfs
-						<li>。。。。</li>
-						<li>。。。。</li>
-						<li>。。。。</li>
+				<div>
+					The search is: <span data-bind="text: searchStr"></span>
+				</div>
+<div>
+    Preferred flavors of spam:
+    <div><input type="checkbox" value="restaurant" data-bind="checked: placeType" /> 宾馆饭店</div>
+    <div><input type="checkbox" value="park" data-bind="checked: placeType" /> 公园</div>
+    <div><input type="checkbox" value="toilet" data-bind="checked: placeType" /> 公厕</div>
+</div>
+<div>
+	<span data-bind="text: placeType">
+		
+	</span>
+</div>
+<div>
+					<ul data-bind="foreach: myPlaces">
+						<li>
+							<span data-bind="text: name"></span>
+							<br />
+							地址：<span data-bind="text: addr"></span>
+						</li>
 					</ul>
-					
+
 				</div>
 			</div>
 			<div id="mapHolder">
@@ -36,8 +52,10 @@
 			</div>
 		</div>
 		<script src="./js/lib/jquery.js"></script>
-		<script src="./js/lib/jquery.tmpl.js"></script>
-		<script src="./js/main.js"></script>
+		<script src="./js/lib/knockout-3.2.0.js"></script>
+		<script src="./js/models.js"></script>
+		<script src="./js/view.js"></script>
+		<script src="./js/viewModel.js"></script>
 	</body>
 
 </html>

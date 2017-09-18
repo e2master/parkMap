@@ -8,12 +8,27 @@ body {
 	margin: 0px;
 	padding: 0px
 }
+ul{
+	margin: 0;
+	padding: 4px;
+}
+li {
+	list-style: none;
+	cursor: pointer;
+	display: list-item;
+	margin: 4px 0 4px 0;
+	background-color: white;
+	padding: 2px;
+	font-size: 14px;
+}
+
 #wrapper {
 	position: relative;
 	overflow: hidden;
 	width: 100%;
 	height: 100%;
 }
+
 #mapHolder {
 	float: left;
 	background-color: #ccc;
@@ -21,14 +36,16 @@ body {
 	margin-top: 2px;
 	width: calc(100% - 280px);
 }
+
 #mapInfo {
 	float: left;
 	color: #333;
+	background-color: #F3F3F3;
 	width: 265px;
 	height: 100%;
-	background: #fff;
 	padding: 10px 7px 10px 8px;
 }
+
 #container {
 	height: 100%;
 }
